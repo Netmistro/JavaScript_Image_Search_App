@@ -54,6 +54,7 @@ form {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Style Images */
@@ -93,6 +94,7 @@ form {
 
 #show-more-button {
   background-color: #008cba;
+  font-size: 1rem;
   border: none;
   color: white;
   padding: 1rem 1.5rem;
@@ -105,5 +107,29 @@ form {
 }
 
 #show-more-button:hover {
-  background-color: #006080;
+  background-color: #0077b5;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .search-result {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-result {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+  }
+  #search-input {
+    width: 85%;
+    margin-bottom: 1rem;
+  }
+  #search-button {
+    width: 50%;
+    font-size: 1.5rem;
+  }
 }
